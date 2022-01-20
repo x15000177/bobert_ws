@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="BobertClamp">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.041 0.045 0.049"
+        rpy="0 0 0" />
+      <mass
+        value="0.72324" />
+      <inertia
+        ixx="0.00106702008"
+        ixy="1.44108538759532E-19"
+        ixz="-8.82381161024904E-36"
+        iyy="0.00098408856"
+        iyz="-5.5502882758546E-21"
+        izz="0.00089344248" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Servo_Link_1">
+    <inertial>
+      <origin
+        xyz="0.000249999999999632 0.0125 2.42861286636753E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.03125" />
+      <inertia
+        ixx="8.13802083333334E-06"
+        ixy="1.36963675243258E-23"
+        ixz="-4.2351647362715E-22"
+        iyy="8.13802083333334E-06"
+        iyz="-5.34587908340087E-23"
+        izz="3.25520833333333E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Servo_Joint_1"
+    type="revolute">
+    <origin
+      xyz="0.045 0.055 0.098"
+      rpy="1.5707963267949 0 1.89015420534387" />
+    <parent
+      link="base_link" />
+    <child
+      link="Servo_Link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Servo_Link_2">
+    <inertial>
+      <origin
+        xyz="0.0525 2.56739074444567E-16 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.17875" />
+      <inertia
+        ixx="5.43697916666667E-05"
+        ixy="-1.86347248395946E-20"
+        ixz="7.45388993583784E-20"
+        iyy="0.000261049479166666"
+        iyz="2.03287907341032E-20"
+        izz="0.000296799479166667" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Servo_Joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.0125 0"
+      rpy="1.5707963267949 0 0.980263921832072" />
+    <parent
+      link="Servo_Link_1" />
+    <child
+      link="Servo_Link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Servo_Link_3">
+    <inertial>
+      <origin
+        xyz="0.0484999999999999 -1.59594559789866E-16 1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.16775" />
+      <inertia
+        ixx="5.10239583333333E-05"
+        ixy="1.10114283143059E-20"
+        ixz="2.11758236813575E-20"
+        iyy="0.000216802895833333"
+        iyz="7.6232965252887E-21"
+        izz="0.000250352895833333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Servo_Joint_3"
+    type="revolute">
+    <origin
+      xyz="0.105 0 0"
+      rpy="-3.14159265358979 -0.852180438694167 0" />
+    <parent
+      link="Servo_Link_2" />
+    <child
+      link="Servo_Link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Servo_Link_4">
+    <inertial>
+      <origin
+        xyz="0.0125000000000005 -3.67761376907083E-16 0.0125000000000005"
+        rpy="0 0 0" />
+      <mass
+        value="0.125" />
+      <inertia
+        ixx="5.20833333333333E-05"
+        ixy="5.9292306307801E-21"
+        ixz="-4.2351647362715E-21"
+        iyy="5.20833333333333E-05"
+        iyz="8.04681299891585E-21"
+        izz="5.20833333333333E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Servo_Joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0969999999999999 0 0"
+      rpy="-3.14159265358979 -0.158151274017002 0" />
+    <parent
+      link="Servo_Link_3" />
+    <child
+      link="Servo_Link_4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Servo_Link_5">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -8.32667268468867E-17 -0.0455485642329055"
+        rpy="0 0 0" />
+      <mass
+        value="0.0122400231173083" />
+      <inertia
+        ixx="5.9571570750398E-06"
+        ixy="1.37642853928824E-21"
+        ixz="1.28643128864247E-20"
+        iyy="8.58180385971075E-06"
+        iyz="-7.6232965252887E-21"
+        izz="2.64521129851044E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/Servo_Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Servo_Joint_5"
+    type="revolute">
+    <origin
+      xyz="0.0300514357670951 0 0.0125000000000007"
+      rpy="-1.5707963267949 0.0774701937986736 1.5707963267949" />
+    <parent
+      link="Servo_Link_4" />
+    <child
+      link="Servo_Link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="End_Effector_Link">
+    <inertial>
+      <origin
+        xyz="0.0368160588340452 0.00317499999999993 -0.0458585223703533"
+        rpy="0 0 0" />
+      <mass
+        value="0.0235003229615022" />
+      <inertia
+        ixx="2.91780359103134E-05"
+        ixy="-2.22346148654254E-20"
+        ixz="9.84316018531001E-06"
+        iyy="4.32505953510363E-05"
+        iyz="3.31401640613245E-20"
+        izz="1.41120424312485E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/End_Effector_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BobertClamp/meshes/End_Effector_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="End_Effector_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.0127 0 -0.0455485642329056"
+      rpy="0 0.458786615265371 0" />
+    <parent
+      link="Servo_Link_5" />
+    <child
+      link="End_Effector_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
