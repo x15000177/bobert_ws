@@ -39,11 +39,12 @@ Given the envrionment provided (Ubuntu 18.04 on a Nvidia Jetson with ROS Melodic
 3. Interfaces
    - See [here](https://drive.google.com/file/d/1lojEnnw9Ap1IzZ4uBlDvkBp3bLHRttGS/view?usp=sharing)
 
-### Responsibilities
+### Xuanhao's Responsibilities
   - Using all the tools necessary and writing the hardware interface to simulate and control the arm and wheels from ROS packages.
   - Everything in this repository.
 
 
+## Progress Log
 ### Goal:
 Writing the Bobert control package.
 ### Steps Taken [as of Alpha Build 1/21/22]:
