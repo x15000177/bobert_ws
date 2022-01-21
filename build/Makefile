@@ -1286,19 +1286,6 @@ bobert_control_generate_messages_cpp/fast:
 .PHONY : bobert_control_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named _bobert_control_generate_messages_check_deps_bobertTelemetry
-
-# Build rule for target.
-_bobert_control_generate_messages_check_deps_bobertTelemetry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bobert_control_generate_messages_check_deps_bobertTelemetry
-.PHONY : _bobert_control_generate_messages_check_deps_bobertTelemetry
-
-# fast build rule for target.
-_bobert_control_generate_messages_check_deps_bobertTelemetry/fast:
-	$(MAKE) -f bobert_control/CMakeFiles/_bobert_control_generate_messages_check_deps_bobertTelemetry.dir/build.make bobert_control/CMakeFiles/_bobert_control_generate_messages_check_deps_bobertTelemetry.dir/build
-.PHONY : _bobert_control_generate_messages_check_deps_bobertTelemetry/fast
-
-#=============================================================================
 # Target rules for targets named bobert_control_generate_messages_eus
 
 # Build rule for target.
@@ -1336,6 +1323,32 @@ bobert_hw_main: cmake_check_build_system
 bobert_hw_main/fast:
 	$(MAKE) -f bobert_control/CMakeFiles/bobert_hw_main.dir/build.make bobert_control/CMakeFiles/bobert_hw_main.dir/build
 .PHONY : bobert_hw_main/fast
+
+#=============================================================================
+# Target rules for targets named _bobert_control_generate_messages_check_deps_bobertTelemetry
+
+# Build rule for target.
+_bobert_control_generate_messages_check_deps_bobertTelemetry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bobert_control_generate_messages_check_deps_bobertTelemetry
+.PHONY : _bobert_control_generate_messages_check_deps_bobertTelemetry
+
+# fast build rule for target.
+_bobert_control_generate_messages_check_deps_bobertTelemetry/fast:
+	$(MAKE) -f bobert_control/CMakeFiles/_bobert_control_generate_messages_check_deps_bobertTelemetry.dir/build.make bobert_control/CMakeFiles/_bobert_control_generate_messages_check_deps_bobertTelemetry.dir/build
+.PHONY : _bobert_control_generate_messages_check_deps_bobertTelemetry/fast
+
+#=============================================================================
+# Target rules for targets named bobert_sim_echo
+
+# Build rule for target.
+bobert_sim_echo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bobert_sim_echo
+.PHONY : bobert_sim_echo
+
+# fast build rule for target.
+bobert_sim_echo/fast:
+	$(MAKE) -f bobert_control/CMakeFiles/bobert_sim_echo.dir/build.make bobert_control/CMakeFiles/bobert_sim_echo.dir/build
+.PHONY : bobert_sim_echo/fast
 
 #=============================================================================
 # Target rules for targets named bobert_control_geneus
@@ -1540,10 +1553,11 @@ help:
 	@echo "... rrbot_hw_interface"
 	@echo "... bobert_control_gencpp"
 	@echo "... bobert_control_generate_messages_cpp"
-	@echo "... _bobert_control_generate_messages_check_deps_bobertTelemetry"
 	@echo "... bobert_control_generate_messages_eus"
 	@echo "... bobert_control_generate_messages"
 	@echo "... bobert_hw_main"
+	@echo "... _bobert_control_generate_messages_check_deps_bobertTelemetry"
+	@echo "... bobert_sim_echo"
 	@echo "... bobert_control_geneus"
 	@echo "... bobert_control_generate_messages_lisp"
 	@echo "... bobert_control_genlisp"

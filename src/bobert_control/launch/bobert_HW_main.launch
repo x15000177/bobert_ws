@@ -28,6 +28,9 @@
     <!-- Convert joint states to /tf tranforms -->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
 
+    <!-- Simple simulator -->
+    <node name="bobert_sim_echo" pkg="bobert_control" type="bobert_sim_echo"/>
+
 
  
  <!-- MOVEIT -->

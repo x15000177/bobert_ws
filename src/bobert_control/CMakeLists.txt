@@ -215,3 +215,11 @@ add_dependencies(bobert_hw_main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXP
 target_link_libraries(bobert_hw_main
   ${catkin_LIBRARIES}
 )
+
+add_executable(bobert_sim_echo
+  src/bobert_sim_echo.cpp
+)
+add_dependencies(bobert_sim_echo ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(bobert_sim_echo
+  ${catkin_LIBRARIES}
+)

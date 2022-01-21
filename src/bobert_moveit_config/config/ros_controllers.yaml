@@ -22,4 +22,14 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
-  []
+  - name: bobert_control
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - Servo_Joint_1
+      - Servo_Joint_2
+      - Servo_Joint_3
+      - Servo_Joint_4
+      - Servo_Joint_5
+      - End_Effector_Joint
