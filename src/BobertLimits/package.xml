@@ -1,10 +1,10 @@
 <package format="2">
-  <name>BobertClamp</name>
+  <name>BobertLimits</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for BobertClamp</p>
+    <p>URDF Description package for BobertLimits</p>
     <p>This package contains configuration data, 3D models and launch files
-for BobertClamp robot</p>
+for BobertLimits robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />

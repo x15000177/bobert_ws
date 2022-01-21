@@ -3,7 +3,7 @@
     name="model" />
   <param
     name="robot_description"
-    textfile="$(find BobertClamp)/urdf/BobertClamp.urdf" />
+    textfile="$(find BobertLimits)/urdf/BobertLimits.urdf" />
   <node
     name="joint_state_publisher_gui"
     pkg="joint_state_publisher_gui"
@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find BobertClamp)/urdf.rviz" />
+    args="-d $(find BobertLimits)/urdf.rviz" />
 </launch>

@@ -134,7 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/steffen/bobert_ws/build/bobert_moveit_config/cmake_install.cmake")
   include("/home/steffen/bobert_ws/build/ros_control_boilerplate/cmake_install.cmake")
   include("/home/steffen/bobert_ws/build/bobert_control/cmake_install.cmake")
-  include("/home/steffen/bobert_ws/build/BobertClamp/cmake_install.cmake")
+  include("/home/steffen/bobert_ws/build/BobertLimits/cmake_install.cmake")
 
 endif()
 

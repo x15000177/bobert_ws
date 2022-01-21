@@ -29,6 +29,12 @@ BobertClamp_BINARY_DIR:STATIC=/home/steffen/bobert_ws/build/BobertClamp
 //Value Computed by CMake
 BobertClamp_SOURCE_DIR:STATIC=/home/steffen/bobert_ws/src/BobertClamp
 
+//Value Computed by CMake
+BobertLimits_BINARY_DIR:STATIC=/home/steffen/bobert_ws/build/BobertLimits
+
+//Value Computed by CMake
+BobertLimits_SOURCE_DIR:STATIC=/home/steffen/bobert_ws/src/BobertLimits
+
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
 

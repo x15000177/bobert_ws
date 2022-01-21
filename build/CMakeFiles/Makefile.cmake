@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "BobertClamp/catkin_generated/package.cmake"
+  "BobertLimits/catkin_generated/package.cmake"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
@@ -25,8 +25,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/steffen/bobert_ws/devel/share/bobert_control/cmake/bobert_control-msg-paths.cmake"
   "/home/steffen/bobert_ws/devel/share/ros_control_boilerplate/cmake/ros_control_boilerplateConfig-version.cmake"
   "/home/steffen/bobert_ws/devel/share/ros_control_boilerplate/cmake/ros_control_boilerplateConfig.cmake"
-  "/home/steffen/bobert_ws/src/BobertClamp/CMakeLists.txt"
-  "/home/steffen/bobert_ws/src/BobertClamp/package.xml"
+  "/home/steffen/bobert_ws/src/BobertLimits/CMakeLists.txt"
+  "/home/steffen/bobert_ws/src/BobertLimits/package.xml"
   "/home/steffen/bobert_ws/src/CMakeLists.txt"
   "/home/steffen/bobert_ws/src/bobert_control/CMakeLists.txt"
   "/home/steffen/bobert_ws/src/bobert_control/package.xml"
@@ -284,7 +284,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ros_control_boilerplate/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ros_control_boilerplate/rrbot_control/CMakeFiles/CMakeDirectoryInformation.cmake"
   "bobert_control/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "BobertClamp/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "BobertLimits/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
