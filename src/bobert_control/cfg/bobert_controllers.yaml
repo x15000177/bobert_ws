@@ -21,7 +21,7 @@ joint_state_controller:
 # Joint Trajectory Controller
 position_trajectory_controller:
   type: position_controllers/JointTrajectoryController
-  Joints:
+  joints:
     - Servo_Joint_1
     - Servo_Joint_2
     - Servo_Joint_3

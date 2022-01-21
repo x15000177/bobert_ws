@@ -2,4 +2,4 @@
 source_root_dir = '/home/steffen/bobert_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/steffen/ws_moveit/devel;/opt/ros/melodic'.split(';') if '/home/steffen/ws_moveit/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/home/steffen/bobert_ws/devel;/home/steffen/ws_moveit/devel;/opt/ros/melodic'.split(';') if '/home/steffen/bobert_ws/devel;/home/steffen/ws_moveit/devel;/opt/ros/melodic' != '' else []

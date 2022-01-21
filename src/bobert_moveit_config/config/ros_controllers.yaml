@@ -9,7 +9,6 @@ generic_hw_control_loop:
 # Settings for ros_control hardware interface
 hardware_interface:
   joints:
-    - fixed_frame
     - Servo_Joint_1
     - Servo_Joint_2
     - Servo_Joint_3
