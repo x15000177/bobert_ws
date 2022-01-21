@@ -2,15 +2,6 @@
 Team Mission Control's Repository for arm testing
 - Xuanhao Shi
 
-## Table of Contents
-1. [Design Goals](#design-goals)
-2. [Architecture](#architecture)
-3. [ROS2+Docker Approach](./ROS2_Docker_Implementation)
-   - **Depreciated:** This was a design attempt from which we've since pivoted away. 
-4. [ROS Melodic Implemenation](./ROS_Melodic_Implementation)
-   - **Active:** This is the current path of development. 
-   - ROS Melodic is natively supported by the Nvidia Jetson Hardware, making development significantly more intuitive than using a containerized approach.
-
 ## Design Goals
 ### Top-Level Goal:
 The goal for this specific repository is to develop the hardware interface to connect the physical robot "Bobert"'s hardware to virtual key location points
@@ -44,13 +35,9 @@ Given the envrionment provided (Ubuntu 18.04 on a Nvidia Jetson with ROS Melodic
       - cfg files, include files, launch files, msg files, src files, CMakeLists, packages, etc.
    - RVIZ: to simulate the control package.
 2. Relationship Diagram
-<p align="center">
-   <img src="https://drive.google.com/file/d/1DbsKaMfpr8qT6v7UN-TFkli0K3jzfaP3/view?usp=sharing">
-</p>
+   - See [here](https://drive.google.com/file/d/1DbsKaMfpr8qT6v7UN-TFkli0K3jzfaP3/view?usp=sharing)
 3. Interfaces
-<p align="center">
-   <img src="https://drive.google.com/file/d/1lojEnnw9Ap1IzZ4uBlDvkBp3bLHRttGS/view?usp=sharing">
-</p>
+   - See [here](https://drive.google.com/file/d/1lojEnnw9Ap1IzZ4uBlDvkBp3bLHRttGS/view?usp=sharing)
 
 ### Responsibilities
   - Using all the tools necessary and writing the hardware interface to simulate and control the arm and wheels from ROS packages.
@@ -64,9 +51,7 @@ Writing the Bobert control package.
 - Generated the URDF of the arm from the CAD model.
 - Made MoveIt! configuration files.
 - Wrote a majority of the src files for the arm model so that it can be loaded into RVIZ.
-<p align="center">
-   <img src="https://drive.google.com/file/d/1r5v7SpiCPZid2jlV856fBVjpEdzBG8-B/view?usp=sharing">
-</p>
+- See [here](https://drive.google.com/file/d/1r5v7SpiCPZid2jlV856fBVjpEdzBG8-B/view?usp=sharing)
 
 ### Issues Present [as of Alpha Build 1/21/22]:
 - The Bobert control package currently cannot recognize any of the joint controllers.
