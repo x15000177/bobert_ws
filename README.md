@@ -25,6 +25,12 @@ Given the envrionment provided (Ubuntu 18.04 on a Nvidia Jetson with ROS Melodic
 - Write the simulation tests to test the control package.
   - Included in the control package.
 - Integrate the whole hardware interface to the Teensy.
+- Write the Teensy subscribers to take in the ROS messages.
+  - Shown [here](./teensy)
+- Write the Jetson ROS launch files to run all the ros packages.'
+  - Shown [here](./src/teensy_arm/launch)
+- Write the Jetson ROS publishers to transmit the ROS messages.
+  - Shown [here](./src/teensy_arm/src)
  
 
 ### Software Overview
@@ -34,6 +40,7 @@ Given the envrionment provided (Ubuntu 18.04 on a Nvidia Jetson with ROS Melodic
    - RoboWare: to set up the envrionment and organize all the source code:
       - cfg files, include files, launch files, msg files, src files, CMakeLists, packages, etc.
    - RVIZ: to simulate the control package.
+   - Arduino IDE: to program the Teensy. 
 2. Relationship Diagram
    - See [here](https://drive.google.com/file/d/1DbsKaMfpr8qT6v7UN-TFkli0K3jzfaP3/view?usp=sharing)
 3. Interfaces
@@ -66,6 +73,15 @@ Writing the simulation tests.
 
 ### Issues Present [as of Alpha Build 1/21/22]:
 - The exact messages cannot be seen through the terminal due to some of the controllers are unable to be recognized.
+
+
+### Goal:
+Writing the arm movement interface.
+### Steps Taken [as of Release Candidate 3/1/22]:
+- Finished writing the Teensy node and the Jetson node to publish and subscribe arm servo position messages.
+
+### Issues Present [as of Release Candidate 3/1/22]:
+- The arm movement currently is a bit janky and some servo angle limits need to be adjusted to avoid self-collision.
 
 ### Current and Future Testing Plan:
 - Currently, the test is embedded inside the src files for the bobert_control package.
